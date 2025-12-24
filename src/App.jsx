@@ -1,3 +1,33 @@
+// React component: a reusable UI block written as a function
+// Component names must start with a capital letter
+
+// Exporting a component so it can be used in other files
+// Default export allows importing with any name
+
+// JSX allows writing HTML-like syntax inside JavaScript
+// JSX must return a single parent element
+
+// Curly braces {} allow embedding JavaScript expressions in JSX
+// Used for variables, function calls, and dynamic values
+
+// Props are used to pass data from parent to child components
+// Props make components reusable and configurable
+// Props are read-only and should not be modified
+
+// Conditional rendering controls what UI appears based on conditions
+// Common patterns: && operator and ternary operator
+
+// Lists are rendered using array.map()
+// Each list item must have a unique key for efficient rendering
+
+// Keeping components pure ensures predictable UI behavior
+// Components should not modify external variables
+
+// React UI follows a tree structure
+// Parent components pass data down to child components
+
+
+
 // //import gallery from './gallery.js';
 // //export default function App(){
 // //  return(
