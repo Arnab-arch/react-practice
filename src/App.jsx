@@ -116,26 +116,71 @@
 
 //   );
 // }
-import {Avatar} from './Avatar.js';
+// import {Avatar} from './Avatar.js';
 
-function Card({ children }) {
-  return (
-    <div className="card">
-      {children}
-    </div>
-  );
+// function Card({ children }) {
+//   return (
+//     <div className="card">
+//       {children}
+//     </div>
+//   );
+// }
+
+// export default function Profile() {
+//   return (
+//     <Card>
+//       <Avatar
+//         size={100}
+//         person={{ 
+//           name: 'Katsuko Saruhashi',
+//           imageId: 'YfeOqp2'
+//         }}
+//       />
+//     </Card>
+//   );
+// }
+
+// function Item({name,ispacked}){
+//     return(
+//         <li className="item">
+//             {ispacked ? name+"✅" : name}
+//         </li>
+//     );
+// }
+function Item({name,ispacked}){
+    return(
+        <li className="item">
+            {ispacked ?(
+                <del>
+                    {name + "✅"}
+                </del>
+            ):(
+                name
+            )}
+
+        </li>
+
+    );
 }
+export default function PackingList(){
+    return(
+        <section>
+            <h1>sally packing list </h1>
+            <ul>
+                <Item
+                    ispacked={true}
+                    name="space suit"
+                />
+                <Item
+                    ispacked={false}
+                    name="yogurt"
+                />
+                <Item
+                    ispacked={true}
+                    name="banana"
+                />
 
-export default function Profile() {
-  return (
-    <Card>
-      <Avatar
-        size={100}
-        person={{ 
-          name: 'Katsuko Saruhashi',
-          imageId: 'YfeOqp2'
-        }}
-      />
-    </Card>
-  );
+            </ul>
+        </section>
+    );
 }
